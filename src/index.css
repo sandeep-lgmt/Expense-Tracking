@@ -1,0 +1,145 @@
+/* App.css */
+
+/* General page styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #090808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App container */
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Form container */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(8px);
+}
+
+/* Inputs and select */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255,255,255,0.2);
+  color: #5332b7;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #313030;
+}
+
+input:focus, select:focus {
+  outline: none;
+  background-color: rgba(255,255,255,0.35);
+  box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+
+/* Add button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff3b2f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Balance container */
+.balance-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-buttons button {
+  width: auto;
+  padding: 8px 18px;
+  background: #667eea;
+}
+
+.filter-buttons button:hover {
+  background: #5a67d8;
+}
+
+/* Transactions */
+.transaction-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 12px;
+  backdrop-filter: blur(5px);
+}
+
+.transaction-card.income {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.transaction-card.expense {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #FF4C4C;
+}
+
+/* Delete button inside transaction */
+.transaction-card button {
+  width: auto;
+  padding: 6px 12px;
+  background: #e74c3c;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.transaction-card button:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
